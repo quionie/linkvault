@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "linkvault"
 version = "0.1.0"
-description = "Local-first, AI-powered clipboard & link saver. Save anything, find it later — everything stays on your machine."
+description = "Local-first CLI for saving links, text, and notes, with optional local AI summarization and keyword + semantic search."
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.11"

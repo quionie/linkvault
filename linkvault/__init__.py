@@ -1,4 +1,4 @@
-"""LinkVault — a local-first, AI-powered clipboard and link saver.
+"""LinkVault — a local-first CLI for saving links, text, and notes.
 
 Copy links, text, or notes into a local, searchable knowledge base. Content is
 fetched, summarized, tagged, and embedded locally so everything stays on your

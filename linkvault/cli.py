@@ -28,7 +28,10 @@ from .utils import console, format_relative, truncate
 
 app = typer.Typer(
     name="linkvault",
-    help="Local-first, AI-powered clipboard & link saver. Everything stays on your machine.",
+    help=(
+        "Local-first CLI to save links, text, and notes, with optional local AI. "
+        "Runs entirely on your machine."
+    ),
     add_completion=False,
     no_args_is_help=True,
     rich_markup_mode="rich",
