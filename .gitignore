@@ -1,0 +1,37 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# LinkVault local data (never commit a user's vault)
+*.db
+*.sqlite
+*.sqlite3
+.config/
+linkvault_data/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+.DS_Store

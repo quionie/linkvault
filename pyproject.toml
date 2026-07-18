@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "linkvault"
+version = "0.1.0"
+description = "Local-first, AI-powered clipboard & link saver. Save anything, find it later — everything stays on your machine."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [{ name = "Quionie", email = "99093285+quionie@users.noreply.github.com" }]
+keywords = ["cli", "bookmarks", "notes", "ollama", "local-first", "semantic-search", "knowledge-base"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "typer>=0.12",
+    "rich>=13.7",
+    "sqlmodel>=0.0.16",
+    "httpx>=0.27",
+    "trafilatura>=1.8",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/quionie/linkvault"
+Repository = "https://github.com/quionie/linkvault"
+Issues = "https://github.com/quionie/linkvault/issues"
+
+[project.scripts]
+linkvault = "linkvault.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["linkvault"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
